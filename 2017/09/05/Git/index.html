@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Git版本控制工具源代码管理工具(版本控制)的好处a、利于团队开发/多人协同开发 b、对于个人开发    –&amp;gt;对某个功能的修改操作 版本控制工具的种类： git(github) svn java：maven .net：vss tfs  源代码管理工具按照功能划分：a、本地代码管理        –&amp;gt;用于个人开发           –&amp;gt;被淘汰b、集中式源代码管理工具(svn)c、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的博客">
+<meta property="og:url" content="http://yoursite.com/2017/09/05/Git/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="Git版本控制工具源代码管理工具(版本控制)的好处a、利于团队开发/多人协同开发 b、对于个人开发    –&amp;gt;对某个功能的修改操作 版本控制工具的种类： git(github) svn java：maven .net：vss tfs  源代码管理工具按照功能划分：a、本地代码管理        –&amp;gt;用于个人开发           –&amp;gt;被淘汰b、集中式源代码管理工具(svn)c、">
+<meta property="og:updated_time" content="2017-08-13T10:02:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的博客">
+<meta name="twitter:description" content="Git版本控制工具源代码管理工具(版本控制)的好处a、利于团队开发/多人协同开发 b、对于个人开发    –&amp;gt;对某个功能的修改操作 版本控制工具的种类： git(github) svn java：maven .net：vss tfs  源代码管理工具按照功能划分：a、本地代码管理        –&amp;gt;用于个人开发           –&amp;gt;被淘汰b、集中式源代码管理工具(svn)c、">
+  
+    <link rel="alternate" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">我的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Git" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/05/Git/" class="article-date">
+  <time datetime="2017-09-05T15:25:25.386Z" itemprop="datePublished">2017-09-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><h2 id="版本控制工具"><a href="#版本控制工具" class="headerlink" title="版本控制工具"></a>版本控制工具</h2><h3 id="源代码管理工具-版本控制-的好处"><a href="#源代码管理工具-版本控制-的好处" class="headerlink" title="源代码管理工具(版本控制)的好处"></a>源代码管理工具(版本控制)的好处</h3><p>a、利于团队开发/多人协同开发</p>
+<p>b、对于个人开发<br>    –&gt;对某个功能的修改操作</p>
+<h3 id="版本控制工具的种类："><a href="#版本控制工具的种类：" class="headerlink" title="版本控制工具的种类："></a>版本控制工具的种类：</h3><ul>
+<li>git(github)</li>
+<li>svn</li>
+<li>java：maven</li>
+<li>.net：vss tfs</li>
+</ul>
+<h3 id="源代码管理工具按照功能划分："><a href="#源代码管理工具按照功能划分：" class="headerlink" title="源代码管理工具按照功能划分："></a>源代码管理工具按照功能划分：</h3><p>a、本地代码管理        –&gt;用于个人开发           –&gt;被淘汰<br>b、集中式源代码管理工具(svn)<br>c、分布式。。。。。。。(git)       –&gt;兼具了a+b的功能</p>
+<h2 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h2><h3 id="通过git-init将当前文件夹进行初始化"><a href="#通过git-init将当前文件夹进行初始化" class="headerlink" title="通过git init将当前文件夹进行初始化"></a>通过git init将当前文件夹进行初始化</h3><pre><code>--&gt;一定要明确你要将哪个文件夹被git管理起来
+</code></pre><h3 id="git-status可以查看仓库中的文件状态"><a href="#git-status可以查看仓库中的文件状态" class="headerlink" title="git status可以查看仓库中的文件状态"></a>git status可以查看仓库中的文件状态</h3><ul>
+<li>在往git仓库中添加文件的时候，这些刚添加的文件，状态是：未追踪(Untracked)</li>
+<li>对于已经进入过暂存区的文件，文件的状态是：changes to be committed</li>
+<li><p>对于已经进入过暂存区的文件，再次修改文件，文件的状态是：modified</p>
+</li>
+<li><p>ps：如果当前文件夹下面的某个文件夹是空的，不会显示在结果中</p>
+</li>
+</ul>
+<h3 id="git-add-文件名–-gt-将指定的文件放到暂存区"><a href="#git-add-文件名–-gt-将指定的文件放到暂存区" class="headerlink" title="git add 文件名–&gt;将指定的文件放到暂存区"></a>git add 文件名–&gt;将指定的文件放到暂存区</h3><p>把文件放到暂存区之后，状态是：待提交(changes to be committed)</p>
+<p>git add 指定目录–&gt;将指定目录下面的文件放到暂存区<br>    –&gt;ps：如果当前仓库的根目录（.git文件夹位于的目录） git add .将仓库下面的没有被提交到暂存区的代码放到暂存区</p>
+<p>git add *   –&gt;将当前仓库中的所有的没有被提交到暂存区的代码放到暂存区</p>
+<p>–&gt;git add命令不仅仅可以将新添加的文件放到暂存区，也可以将已修改的文件放到暂存区</p>
+<h3 id="关于用户名和邮箱的配置"><a href="#关于用户名和邮箱的配置" class="headerlink" title="关于用户名和邮箱的配置"></a>关于用户名和邮箱的配置</h3><p>–&gt;如果从来没有过，在提交到本地主仓库之前不会有任何问题，但是git commit -m 都会提示你没有配置过，如果没有配置过，是无法正常提交代码，报错信息：Please tell me who you are<br>–&gt;git config user.name xxx<br>–&gt;git config user.email xxx@qq.com<br>    –&gt;可以通过–global选项实现在本机一次配置多次使用</p>
+<h3 id="git-push-服务器仓库的地址-https-master-–-gt-将本地主仓库中的代码上传到服务器中"><a href="#git-push-服务器仓库的地址-https-master-–-gt-将本地主仓库中的代码上传到服务器中" class="headerlink" title="git push 服务器仓库的地址(https) master   –&gt;将本地主仓库中的代码上传到服务器中"></a>git push 服务器仓库的地址(https) master   –&gt;将本地主仓库中的代码上传到服务器中</h3><p>git pull 服务器仓库地址 master –&gt;将服务器代码更新到本地(关联)</p>
+<p>说明：<br>a、只有文件夹中有.git文件夹，仓库就一直有效，–&gt;一旦把.git文件夹删除，那么仓库就废了<br>b、git会忽略是所有的空文件夹<br>c、git管理的文件，不要轻易重命名文件<br>    –&gt;1.txt–&gt;2.txt这样的重命名操作将会被识别为：删除了1.txt，创建了2.txt</p>
+<h2 id="输入github用户名和密码，如果看到：Authentication-failed，一定表示用户名和密码输入错误"><a href="#输入github用户名和密码，如果看到：Authentication-failed，一定表示用户名和密码输入错误" class="headerlink" title="输入github用户名和密码，如果看到：Authentication failed，一定表示用户名和密码输入错误"></a>输入github用户名和密码，如果看到：Authentication failed，一定表示用户名和密码输入错误</h2><h2 id="2个场景："><a href="#2个场景：" class="headerlink" title="2个场景："></a>2个场景：</h2><h3 id="服务器仓库是空仓库"><a href="#服务器仓库是空仓库" class="headerlink" title="服务器仓库是空仓库"></a>服务器仓库是空仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">touch 1.txt</div><div class="line">git add 1.txt</div><div class="line">git commit -m 提交了1.txt</div><div class="line">git push 服务器仓库地址 master</div></pre></td></tr></table></figure>
+<h3 id="服务器仓库是非空仓库-☆☆☆工作中更常见☆☆☆"><a href="#服务器仓库是非空仓库-☆☆☆工作中更常见☆☆☆" class="headerlink" title="服务器仓库是非空仓库(☆☆☆工作中更常见☆☆☆)"></a>服务器仓库是非空仓库(☆☆☆工作中更常见☆☆☆)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git clone 服务器仓库地址</div><div class="line">cd 文件夹</div><div class="line">git add 2.txt</div><div class="line">git commit -m 创建了2.txt</div><div class="line">git push 服务器仓库地址 master</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/09/05/Git/" data-id="cj77rc4r60000q4tvaqjyyfhx" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/05/bash命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/09/05/Git/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/05/bash命令/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/05/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 琚磊<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
