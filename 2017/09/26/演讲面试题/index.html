@@ -87,7 +87,7 @@
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="menu">
                         
-                            <li role="presentation" class=""><a href="/">首页</a></li>
+                            <li role="presentation" class=""><a href="/">Home</a></li>
                         
                             <li role="presentation" class=""><a href="/categories/HTML/CSS/">HTML/CSS</a></li>
                         
@@ -145,19 +145,8 @@
     </div>
     
     <div class="post-body">
-        <h1 id="面试题："><a href="#面试题：" class="headerlink" title="面试题："></a>面试题：</h1><h3 id="1-split-和join-的区别？"><a href="#1-split-和join-的区别？" class="headerlink" title="1.split()和join()的区别？"></a>1.split()和join()的区别？</h3><h3 id="2-display和visibility的用法和区别？"><a href="#2-display和visibility的用法和区别？" class="headerlink" title="2.display和visibility的用法和区别？"></a>2.display和visibility的用法和区别？</h3><h3 id="3-ajax的提交方式有哪些-它们的区别是什么？"><a href="#3-ajax的提交方式有哪些-它们的区别是什么？" class="headerlink" title="3.ajax的提交方式有哪些?它们的区别是什么？"></a>3.ajax的提交方式有哪些?它们的区别是什么？</h3><h3 id="4-js闭包是什么，有什么特性？"><a href="#4-js闭包是什么，有什么特性？" class="headerlink" title="4.js闭包是什么，有什么特性？"></a>4.js闭包是什么，有什么特性？</h3><h3 id="5-谈谈你对前端性能优化的理解？"><a href="#5-谈谈你对前端性能优化的理解？" class="headerlink" title="5.谈谈你对前端性能优化的理解？"></a>5.谈谈你对前端性能优化的理解？</h3><h3 id="6-什么会被打印在控制台上？b是局部变量还是全局变量？"><a href="#6-什么会被打印在控制台上？b是局部变量还是全局变量？" class="headerlink" title="6.什么会被打印在控制台上？b是局部变量还是全局变量？"></a>6.什么会被打印在控制台上？b是局部变量还是全局变量？</h3><pre><code>(function(){
-    var a = b = 5;
-})();
-console.log(b);
-</code></pre><h3 id="7-执行这段代码，输出什么结果？"><a href="#7-执行这段代码，输出什么结果？" class="headerlink" title="7.执行这段代码，输出什么结果？"></a>7.执行这段代码，输出什么结果？</h3><pre><code>function test(){
-    console.log(a);
-    console.log(foo());
-    var a = 1;
-    function foo(){
-        return 2;
-    }
-}
-</code></pre>
+        <h1 id="面试题："><a href="#面试题：" class="headerlink" title="面试题："></a>面试题：</h1><h3 id="1-split-和join-的区别？"><a href="#1-split-和join-的区别？" class="headerlink" title="1.split()和join()的区别？"></a>1.split()和join()的区别？</h3><h3 id="2-display和visibility的用法和区别？"><a href="#2-display和visibility的用法和区别？" class="headerlink" title="2.display和visibility的用法和区别？"></a>2.display和visibility的用法和区别？</h3><h3 id="3-ajax的提交方式有哪些-它们的区别是什么？"><a href="#3-ajax的提交方式有哪些-它们的区别是什么？" class="headerlink" title="3.ajax的提交方式有哪些?它们的区别是什么？"></a>3.ajax的提交方式有哪些?它们的区别是什么？</h3><h3 id="4-js闭包是什么，有什么特性？"><a href="#4-js闭包是什么，有什么特性？" class="headerlink" title="4.js闭包是什么，有什么特性？"></a>4.js闭包是什么，有什么特性？</h3><h3 id="5-谈谈你对前端性能优化的理解？"><a href="#5-谈谈你对前端性能优化的理解？" class="headerlink" title="5.谈谈你对前端性能优化的理解？"></a>5.谈谈你对前端性能优化的理解？</h3><h3 id="6-什么会被打印在控制台上？b是局部变量还是全局变量？"><a href="#6-什么会被打印在控制台上？b是局部变量还是全局变量？" class="headerlink" title="6.什么会被打印在控制台上？b是局部变量还是全局变量？"></a>6.什么会被打印在控制台上？b是局部变量还是全局变量？</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(<span class="selector-tag">function</span>()&#123;</div><div class="line">	var a = b = 5;</div><div class="line">&#125;)();</div><div class="line"><span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="selector-tag">b</span>);</div></pre></td></tr></table></figure>
+<h3 id="7-执行这段代码，输出什么结果？"><a href="#7-执行这段代码，输出什么结果？" class="headerlink" title="7.执行这段代码，输出什么结果？"></a>7.执行这段代码，输出什么结果？</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">function</span> <span class="selector-tag">test</span>()&#123;</div><div class="line">	console.log(a);</div><div class="line">	<span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="selector-tag">foo</span>());</div><div class="line">	var a = 1;</div><div class="line">	<span class="selector-tag">function</span> <span class="selector-tag">foo</span>()&#123;</div><div class="line">		return 2;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
     </div>
 
     <div class="post-footer">   
@@ -168,7 +157,7 @@ console.log(b);
         </div>
         <div>
             
-                版权声明: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
+                License: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
 知识共享署名-非商业性使用-禁止演绎 3.0 未本地化版本许可协议（CC BY-NC-ND 3.0）
 </a>
             
@@ -212,14 +201,14 @@ console.log(b);
     <div class="widget notification">
         <h3 class="title">网站公告</h3>
         <div>
-            <p>我的博客</p>
+            <p>琚磊 </p>
         </div>
     </div>
 
         
         
     <div class="widget">
-        <h3 class="title">分类</h3>
+        <h3 class="title">Categories</h3>
         <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/HTML-CSS/"><i class="fa" aria-hidden="true">HTML/CSS</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link current" href="/categories/工具/"><i class="fa" aria-hidden="true">工具</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/演讲/"><i class="fa" aria-hidden="true">演讲</i></a><span class="category-list-count">2</span></li></ul>
     </div>
 
@@ -227,7 +216,7 @@ console.log(b);
         
         
     <div class="widget">
-      <h3 class="title">归档</h3>
+      <h3 class="title">Archives</h3>
         <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/"><i class="fa" aria-hidden="true">September 2017</i></a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/"><i class="fa" aria-hidden="true">August 2017</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/"><i class="fa" aria-hidden="true">November 2016</i></a><span class="archive-list-count">1</span></li></ul>
     </div>
 
@@ -235,10 +224,10 @@ console.log(b);
         
         
   <div class="widget">
-    <h3 class="title">标签云</h3>
+    <h3 class="title">Tag Cloud</h3>
     <div class="content tag-cloud">
       
-        <a href="undefinedtags/Emmit语法/" style="font-size: 1em;">Emmit语法</a> <a href="undefinedtags/bash/" style="font-size: 1em;">bash</a> <a href="undefinedtags/git/" style="font-size: 1em;">git</a> <a href="undefinedtags/gulp/" style="font-size: 1em;">gulp</a> <a href="undefinedtags/移动web/" style="font-size: 1em;">移动web</a> <a href="undefinedtags/面试题/" style="font-size: 1em;">面试题</a>
+        <a href="undefinedtags/Emmit语法/" style="font-size: 1em;">Emmit语法</a> <a href="undefinedtags/git/" style="font-size: 1em;">git</a> <a href="undefinedtags/bash/" style="font-size: 1em;">bash</a> <a href="undefinedtags/面试题/" style="font-size: 1em;">面试题</a> <a href="undefinedtags/gulp/" style="font-size: 1em;">gulp</a> <a href="undefinedtags/移动web/" style="font-size: 1em;">移动web</a>
     </div>
   </div>
 
@@ -246,7 +235,7 @@ console.log(b);
         
         
     <div class="widget">
-        <h3 class="title">友链</h3>
+        <h3 class="title">Friends</h3>
         <div class="content friends-link">
         
             <a href="：" class="fa" target="_blank">4</a>
