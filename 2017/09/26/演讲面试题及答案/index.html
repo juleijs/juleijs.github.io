@@ -87,11 +87,11 @@
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="menu">
                         
-                            <li role="presentation" class=""><a href="/">Home</a></li>
+                            <li role="presentation" class=""><a href="/">首页</a></li>
                         
-                            <li role="presentation" class=""><a href="/categories/前端/">前端</a></li>
+                            <li role="presentation" class=""><a href="/categories/HTML/CSS/">HTML/CSS</a></li>
                         
-                            <li role="presentation" class=""><a href="/categories/html5/">html5</a></li>
+                            <li role="presentation" class=""><a href="/categories/JavaScript/">JavaScript</a></li>
                         
                             <li role="presentation" class=""><a href="/categories/工具/">工具</a></li>
                         
@@ -120,7 +120,7 @@
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        <span>面试题</span>
+        <span>演讲</span>
     </span>
     
     
@@ -128,7 +128,7 @@
         <i class="fa fa-tags"></i>
         <span class="tags-meta">
             
-            html
+            面试题
             
         </span>
     </span>
@@ -153,29 +153,18 @@
 <li><p>separator 可选项 字符串或者正则表达式对象<br>limit 可选项 返回数组中的元素个数</p>
 </li>
 <li><p>普通字符串</p>
-<pre><code>var str =&quot;Hello World!&quot;;  
-str.split(&quot;&quot;); //[&quot;H&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;, &quot; &quot;, &quot;W&quot;, &quot;o&quot;, &quot;r&quot;, &quot;l&quot;, &quot;d&quot;, &quot;!&quot;]  
-str.split(&quot; &quot;); //[&quot;Hello&quot;, &quot;World!&quot;]  
-str.split(&quot;&quot;,3);//[&quot;H&quot;, &quot;e&quot;, &quot;l&quot;]  
-</code></pre></li>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var str ="Hello World!";  </div><div class="line">  	str.split(""); //["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d", "!"]  </div><div class="line">  	str.split(" "); //["Hello", "World!"]  </div><div class="line">  	str.split("",3);//["H", "e", "l"]</div></pre></td></tr></table></figure>
+</li>
 <li><p>正则</p>
-<pre><code>var numStr = &quot;1a2b3c&quot;;  
-numStr.split(/\d/);//[&quot;&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;]  
-&quot;:a:b:c&quot;.split(&quot;:&quot;);//[&quot;&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;]  
-var myStr = &quot;sharejs.com,google.com,baidu.com_weibo.com_haotu.net&quot;;  
-myStr.split(/[,_]/);//[&quot;sharejs.com&quot;, &quot;google.com&quot;, &quot;baidu.com&quot;, &quot;weibo.com&quot;, &quot;haotu.net&quot;] 
-</code></pre></li>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var numStr = "1a2b3c";  </div><div class="line">  	numStr.split(/\d/);//["", "a", "b", "c"]  </div><div class="line">  	":a:b:c".split(":");//["", "a", "b", "c"]  </div><div class="line">  	var myStr = "sharejs.com,google.com,baidu.com_weibo.com_haotu.net";  </div><div class="line">  	myStr.split(/[,_]/);//["sharejs.com", "google.com", "baidu.com", "weibo.com", "haotu.net"]</div></pre></td></tr></table></figure>
+</li>
 <li><p>2.join方法</p>
 <p>把数组中的所有元素放入一个字符串中<br>形式：<br>arrayObj.join(separator);<br>separator 可选项 省略该参数，则使用逗号作为分割符</p>
-<pre><code>var arr = new Array(3);
-arr[0] = &quot;George&quot;;
-arr[1] = &quot;John&quot;;
-arr[2] = &quot;Thomas&quot;;
-arr.join();//&quot;George,John,Thomas&quot;;
-arr.join(&quot;.&quot;);//&quot;George.John.Thomas&quot;;
-</code></pre><h3 id="2-display和visibility的用法和区别？"><a href="#2-display和visibility的用法和区别？" class="headerlink" title="2.display和visibility的用法和区别？"></a>2.display和visibility的用法和区别？</h3></li>
-<li><p>一、Display的用法</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var arr = new Array(3);</div><div class="line">arr[0] = "George";</div><div class="line">arr[1] = "John";</div><div class="line">arr[2] = "Thomas";</div><div class="line">arr.join();//"George,John,Thomas";</div><div class="line">arr.join(".");//"George.John.Thomas";</div></pre></td></tr></table></figure>
 </li>
+</ul>
+<h3 id="2-display和visibility的用法和区别？"><a href="#2-display和visibility的用法和区别？" class="headerlink" title="2.display和visibility的用法和区别？"></a>2.display和visibility的用法和区别？</h3><ul>
+<li>一、Display的用法</li>
 <li>block：<br>表现为一个块级元素独占一行</li>
 </ul>
 <p>当display被设置为block(块)时，容器中所有的元素将会被当作一个单独的块，就像<div>元素一样，它会在那个点被放入到页面中。(实际上你可以设置<span>的display:block，使其可以像<div>一样工作。</div></span></div></p>
@@ -210,11 +199,8 @@ arr.join(&quot;.&quot;);//&quot;George.John.Thomas&quot;;
 <h3 id="4-js闭包是什么，有什么特性？"><a href="#4-js闭包是什么，有什么特性？" class="headerlink" title="4.js闭包是什么，有什么特性？"></a>4.js闭包是什么，有什么特性？</h3></li>
 <li>1.闭包是什么?</li>
 <li><p> 函数中 返回函数(对象)</p>
-<pre><code>function outer(){
-  function inner(){}
-  return inner;
-}
-</code></pre></li>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">function</span> <span class="selector-tag">outer</span>()&#123;</div><div class="line">  function inner()&#123;&#125;</div><div class="line">  <span class="selector-tag">return</span> <span class="selector-tag">inner</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
 <li><p>3.闭包的特性：</p>
 </li>
 <li>①.封闭性：<br>外界无法访问闭包内部的数据，如果在闭包内声明变量，外界是无法访问的，除非闭包主动向外界提供访问接口；</li>
@@ -321,20 +307,8 @@ arr.join(&quot;.&quot;);//&quot;George.John.Thomas&quot;;
 </ul>
 </li>
 </ul>
-<h3 id="6-什么会被打印在控制台上？b是局部变量还是全局变量？"><a href="#6-什么会被打印在控制台上？b是局部变量还是全局变量？" class="headerlink" title="6.什么会被打印在控制台上？b是局部变量还是全局变量？"></a>6.什么会被打印在控制台上？b是局部变量还是全局变量？</h3><pre><code>(function(){
-    var a = b = 5;
-})();
-console.log(b); //5 全局变量
-</code></pre><h3 id="7-执行这段代码，输出什么结果？"><a href="#7-执行这段代码，输出什么结果？" class="headerlink" title="7.执行这段代码，输出什么结果？"></a>7.执行这段代码，输出什么结果？</h3><pre><code>function test(){
-    console.log(a);
-    console.log(foo());
-        var a = 1;
-        function foo(){
-            return 2;
-        }
-}
-test(); //undefined 2
-</code></pre>
+<h3 id="6-什么会被打印在控制台上？b是局部变量还是全局变量？"><a href="#6-什么会被打印在控制台上？b是局部变量还是全局变量？" class="headerlink" title="6.什么会被打印在控制台上？b是局部变量还是全局变量？"></a>6.什么会被打印在控制台上？b是局部变量还是全局变量？</h3> <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(<span class="selector-tag">function</span>()&#123;</div><div class="line">	var a = b = 5;</div><div class="line">&#125;)();</div><div class="line">console.log(b); //5 全局变量</div></pre></td></tr></table></figure>
+<h3 id="7-执行这段代码，输出什么结果？"><a href="#7-执行这段代码，输出什么结果？" class="headerlink" title="7.执行这段代码，输出什么结果？"></a>7.执行这段代码，输出什么结果？</h3> <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">function</span> <span class="selector-tag">test</span>()&#123;</div><div class="line">	console.log(a);</div><div class="line">	<span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="selector-tag">foo</span>());</div><div class="line">		var a = 1;</div><div class="line">		<span class="selector-tag">function</span> <span class="selector-tag">foo</span>()&#123;</div><div class="line">			return 2;</div><div class="line">		&#125;</div><div class="line">&#125;</div><div class="line">test(); //undefined 2</div></pre></td></tr></table></figure>
     </div>
 
     <div class="post-footer">   
@@ -345,7 +319,7 @@ test(); //undefined 2
         </div>
         <div>
             
-                License: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
+                版权声明: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
 知识共享署名-非商业性使用-禁止演绎 3.0 未本地化版本许可协议（CC BY-NC-ND 3.0）
 </a>
             
@@ -396,26 +370,26 @@ test(); //undefined 2
         
         
     <div class="widget">
-        <h3 class="title">Categories</h3>
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link current" href="/categories/面试题/"><i class="fa" aria-hidden="true">面试题</i></a><span class="category-list-count">2</span></li></ul>
+        <h3 class="title">分类</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/HTML-CSS/"><i class="fa" aria-hidden="true">HTML/CSS</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link current" href="/categories/工具/"><i class="fa" aria-hidden="true">工具</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/演讲/"><i class="fa" aria-hidden="true">演讲</i></a><span class="category-list-count">2</span></li></ul>
     </div>
 
 
         
         
     <div class="widget">
-      <h3 class="title">Archives</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/"><i class="fa" aria-hidden="true">September 2017</i></a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/"><i class="fa" aria-hidden="true">August 2017</i></a><span class="archive-list-count">1</span></li></ul>
+      <h3 class="title">归档</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/"><i class="fa" aria-hidden="true">September 2017</i></a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/"><i class="fa" aria-hidden="true">August 2017</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/"><i class="fa" aria-hidden="true">November 2016</i></a><span class="archive-list-count">1</span></li></ul>
     </div>
 
 
         
         
   <div class="widget">
-    <h3 class="title">Tag Cloud</h3>
+    <h3 class="title">标签云</h3>
     <div class="content tag-cloud">
       
-        <a href="undefinedtags/html/" style="font-size: 1em;">html</a>
+        <a href="undefinedtags/Emmit语法/" style="font-size: 1em;">Emmit语法</a> <a href="undefinedtags/bash/" style="font-size: 1em;">bash</a> <a href="undefinedtags/git/" style="font-size: 1em;">git</a> <a href="undefinedtags/gulp/" style="font-size: 1em;">gulp</a> <a href="undefinedtags/移动web/" style="font-size: 1em;">移动web</a> <a href="undefinedtags/面试题/" style="font-size: 1em;">面试题</a>
     </div>
   </div>
 
@@ -423,7 +397,7 @@ test(); //undefined 2
         
         
     <div class="widget">
-        <h3 class="title">Friends</h3>
+        <h3 class="title">友链</h3>
         <div class="content friends-link">
         
             <a href="：" class="fa" target="_blank">4</a>
